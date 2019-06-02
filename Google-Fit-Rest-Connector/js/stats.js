@@ -288,7 +288,19 @@ function displayCalendarDayStats(current_time){
 
     $.when(getAggregatedData(DataTypeName.STEPS, current_time, (current_time).addDays(1), BucketTimeMillis.DAY )).then(function (d){
         var steps = d[0].value;
-        $("#stats-calendar-day .day-steps td:nth-child(2)").text(steps);    
+        $("#stats-calendar-day .day-steps td:nth-child(2)").text(steps);
+        if  (steps < 5000) {
+            alert("오늘 " + steps + "보를 걸었습니다. 분발하세요!");
+        }
+        else if (steps < 8000) {
+            alert("오늘 " + steps + "보를 걸었습니다. 조금만 더 힘내세요!");
+        }
+        else if (steps < 10000) {
+            alert("만보까지 " + (10000 - steps) + "보 남았어요. 화이팅!");
+        }
+        else {
+            alert("대단해요! 10000보 넘게 걸었어요!");
+        }
     });
     
     $("#stats-calendar-day .day-activity").remove();
