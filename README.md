@@ -1,6 +1,6 @@
 # MakeU
 
-http://ssn.pythonanywhere.com/login/signin/
+http://ssn.pythonanywhere.com/
 
 ▶ 자사가 서비스하는 ‘Dieta’는 회원의 위치정보를 활용하여 그룹 매칭을 지원하고, 단체 운동에서 활동량을 기준으로 게임 랭킹 시스템을 적용한다. 이를 통해 함께 하는 다이어트의 즐거움과 지속성을 도모할 수 있는 환경을 제공한다.
 
